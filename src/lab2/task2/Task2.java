@@ -13,13 +13,13 @@ public class Task2 {
     public static University createUniversity() {
 
         final List<Group> groups = new ArrayList<>();
-        final String groupName1 = "AN-11";
-        final String spec1 = "Analyst";
+        final String groupName1 = "IT-21";
+        final String spec1 = "DEVOPS";
         final List<Student> students1 = Stream.of(
-                new Student("Makayla Obrien", spec1, groupName1),
-                new Student("Yousuf Alexander", spec1, groupName1),
-                new Student("Mariam Almond", spec1, groupName1),
-                new Student("Amar Bird", spec1, groupName1)
+                new Student("DANVERH", spec1, groupName1),
+                new Student("GHOST", spec1, groupName1),
+                new Student("PANASYG", spec1, groupName1),
+                new Student("ISHTVAN", spec1, groupName1)
         ).collect(Collectors.toList());
         groups.add(new Group(groupName1, students1, Stream.of(
                 new Subject("Data Analyse", new HashMap<Student, Integer>(){{
@@ -54,7 +54,7 @@ public class Task2 {
         ).collect(Collectors.toList())
         ));
 
-        final String groupName2 = "IT-21";
+        final String groupName2 = "NT-41";
         final String spec2 = "Information systems and technologies";
         final List<Student> students2 = Stream.of(
                 new Student("Edgar Frank", spec2, groupName2),
